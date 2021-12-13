@@ -1,0 +1,135 @@
+
+  <div fxLayout="row">
+    <div fxFlex="20%" class="menu">
+      <mat-icon><span class="material-icons-outlined">
+          menu
+        </span>
+      </mat-icon>
+    </div>
+    <div fxFlex="60%"><strong>Standard</strong><mat-icon class="openInNew"><span class="material-icons-outlined">
+      open_in_new
+      </span></mat-icon></div>
+    <div fxFlex="20%" class="pull-right">
+      <mat-icon routerLink="/home/history"><span class="material-icons-outlined">
+          history
+        </span></mat-icon>
+    </div>
+  </div>
+<div class="input-area">
+  <div>{{input}}</div>
+  <div class="result">{{result}}</div>
+</div>
+
+<div fxLayout="row">
+  <div fxFlex="18%">
+    <button class="heding"disabled>MC</button>
+  </div>
+  <div fxFlex="18%">
+    <button  class="heding" disabled>MR</button>
+  </div>
+  <div fxFlex="18%">
+    <button class="heding">M+</button>
+  </div>
+  <div fxFlex="18%">
+    <button class="heding">M-</button>
+  </div>
+  <div fxFlex="18%">
+    <button class="heding"> MS</button>
+  </div>
+  <div fxFlex="18%">
+    <button class="heding">M</button>
+  </div>
+</div>
+<div fxLayout="row">
+  <div fxFlex="25%">
+    <button class="subHeading"  >%</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading">CE</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading"(click)="allClear()">C</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading"><mat-icon><span class="material-icons-outlined">
+      backspace
+      </span></mat-icon></button>
+  </div>
+ 
+</div>
+<div fxLayout="row">
+  <div fxFlex="25%">
+    <button class="subHeading">1/x</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading">xˇ2</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading">√x</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading"(click)="pressOperator('/')">÷</button>
+  </div>
+ 
+</div>
+<div fxLayout="row">
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressNum('7')">7</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressNum('8')">8</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressNum('9')">9</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressOperator('*')">*</button>
+  </div>
+ 
+</div>
+
+<div fxLayout="row">
+  <div fxFlex="25%">
+    <button class="subHeading"(click)="pressNum('4')">4</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressNum('5')">5</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressNum('6')">6</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressOperator('-')">-</button>
+  </div>
+ 
+</div>
+<div fxLayout="row">
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressNum('1')" >1</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressNum('2')">2</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressNum('3')">3</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading"(click)="pressOperator('+')">+</button>
+  </div>
+ 
+</div>
+<div fxLayout="row">
+  <div fxFlex="25%">
+    <button class="subHeading">+/-</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading"(click)="pressNum('0')">0</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading" (click)="pressNum('.')">.</button>
+  </div>
+  <div fxFlex="25%">
+    <button class="subHeading equal" (click)="getAnswer()">=</button>
+  </div>
+  
+</div>

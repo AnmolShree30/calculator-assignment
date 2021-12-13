@@ -1,0 +1,23 @@
+.box{
+    height:500px;
+    width:400px;
+    margin:10px;
+    border: 1px solid beige;
+}
+
+.heding{
+    width:63px;
+    height:20px;
+}
+.input-area{
+    height: 50px;
+    border: 1px solid lightgrey;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 98%;
+    text-align: right;
+}
+.subHeading{
+    height: 40px;
+    width: 95px;
+}
